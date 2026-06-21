@@ -41,12 +41,12 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// ── System prompt with Cyril's full profile ─────────────────
-const SYSTEM_PROMPT = `You are an AI assistant for Cyril Lopes, a Full Stack Software Engineer. Be friendly, professional, and concise (2-4 sentences max per reply). Here's everything you know about him:
+// ── System prompt with Darshan's full profile ─────────────────
+const SYSTEM_PROMPT = `You are an AI assistant for Darshan SR, a Backend Software Engineer. Be friendly, professional, and concise (2-4 sentences max per reply). Here's everything you know about him:
 
 PERSONAL:
-- Name: Cyril Lopes
-- Phone: +1 (913) 208 8744
+- Name: Darshan SR
+- Phone: +91-6364547354 / 7619211775
 - Email: contact@cyrillopes.com
 - Location: Kansas City, MO — available worldwide (Remote)
 - Status: Open to backend / full-stack / founding engineer roles — Full-time or Contract
@@ -110,12 +110,9 @@ app.post("/api/chat", async (req, res) => {
   }
 
   if (!process.env.ANTHROPIC_API_KEY) {
-    return res
-      .status(500)
-      .json({
-        error:
-          "API key not configured. Add ANTHROPIC_API_KEY to your .env file.",
-      });
+    return res.status(500).json({
+      error: "API key not configured. Add ANTHROPIC_API_KEY to your .env file.",
+    });
   }
 
   try {
