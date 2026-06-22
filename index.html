@@ -2349,6 +2349,344 @@
     </div>
   </div>
 
+  <!-- Backend Engineering Article Modal || BLOG CARD 1-->
+  <div class="modal-overlay" id="apiArticleModal" onclick="closeApiArticle(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          🎯 Why Most APIs Fail in Production — And How to Prevent It
+        </div>
+
+        <button class="modal-close" onclick="
+              document
+                .getElementById('apiArticleModal')
+                .classList.remove('open')
+            ">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p style="
+              color: var(--muted);
+              font-size: 0.9rem;
+              line-height: 1.8;
+              margin-bottom: 1.2rem;
+            ">
+          Building APIs is easy. Building APIs that survive production
+          traffic, failures, edge cases, and millions of requests is a
+          completely different challenge.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">
+          🚀 The Reality of Production Systems
+        </h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          During my experience developing and maintaining 100+ REST APIs
+          across fintech and telecom platforms, I learned that most production
+          issues are rarely caused by syntax errors. Instead, they originate
+          from poor exception handling, missing monitoring, database
+          bottlenecks, and unanticipated traffic spikes.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">⚠️ Common Production Issues</h3>
+
+        <ul style="
+              color: var(--muted);
+              line-height: 1.8;
+              margin-left: 1.2rem;
+              margin-bottom: 1rem;
+            ">
+          <li>Unoptimized database queries</li>
+          <li>Poor exception handling</li>
+          <li>Missing timeout management</li>
+          <li>Insufficient logging and monitoring</li>
+          <li>Lack of rate limiting</li>
+          <li>Improper API versioning</li>
+        </ul>
+
+        <h3 style="margin-bottom: 0.8rem">💡 Key Lessons Learned</h3>
+
+        <p style="color: var(--muted); line-height: 1.8">
+          Production-ready APIs are not just functional. They must be
+          reliable, scalable, observable, secure, and maintainable. Proper
+          logging, monitoring, health checks, and performance optimization are
+          critical for long-term success.
+        </p>
+
+        <div style="
+              margin-top: 1.5rem;
+              padding: 1rem;
+              border-radius: 12px;
+              background: rgba(34, 211, 238, 0.08);
+              border: 1px solid rgba(34, 211, 238, 0.15);
+            ">
+          <strong>Takeaway:</strong>
+          Great APIs are designed for failure, monitored continuously, and
+          built to scale from day one.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cloud & DevOps Article Modal || BLOG CARD 2-->
+  <div class="modal-overlay" id="cloudArticleModal" onclick="closeCloudArticle(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          ☁️ From Manual Deployments to CI/CD Automation
+        </div>
+
+        <button class="modal-close" onclick="
+              document
+                .getElementById('cloudArticleModal')
+                .classList.remove('open')
+            ">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p style="
+              color: var(--muted);
+              font-size: 0.9rem;
+              line-height: 1.8;
+              margin-bottom: 1.2rem;
+            ">
+          Deployments used to be stressful, manual, and error-prone. Today,
+          modern DevOps practices have transformed software delivery into a
+          predictable and automated process.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">🚀 The Shift Towards Automation</h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          While working across enterprise applications, I leveraged Azure
+          DevOps, Docker, Kubernetes, and CI/CD pipelines to automate
+          deployments, reduce release risks, and improve delivery speed.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">⚙️ Key Technologies</h3>
+
+        <ul style="
+              color: var(--muted);
+              line-height: 1.8;
+              margin-left: 1.2rem;
+              margin-bottom: 1rem;
+            ">
+          <li>Azure DevOps Pipelines</li>
+          <li>Docker Containerization</li>
+          <li>Kubernetes (AKS)</li>
+          <li>Automated Build & Release Pipelines</li>
+          <li>Monitoring & Alerting</li>
+          <li>Infrastructure Management</li>
+        </ul>
+
+        <h3 style="margin-bottom: 0.8rem">💡 Lessons Learned</h3>
+
+        <p style="color: var(--muted); line-height: 1.8">
+          Automation isn't just about speed. It's about consistency,
+          reliability, and reducing human error. A well-designed CI/CD
+          pipeline allows teams to focus more on innovation and less on
+          deployment challenges.
+        </p>
+
+        <div style="
+              margin-top: 1.5rem;
+              padding: 1rem;
+              border-radius: 12px;
+              background: rgba(52, 211, 153, 0.08);
+              border: 1px solid rgba(52, 211, 153, 0.15);
+            ">
+          <strong>Takeaway:</strong>
+          Great engineering teams don't deploy faster because they work harder
+          — they deploy faster because they automate smarter.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Production Support Article Modal || BLOG CARD 3 -->
+  <div class="modal-overlay" id="productionArticleModal" onclick="closeProductionArticle(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          🚨 What Critical Production Incidents Taught Me About Engineering
+        </div>
+
+        <button class="modal-close" onclick="
+              document
+                .getElementById('productionArticleModal')
+                .classList.remove('open')
+            ">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p style="
+              color: var(--muted);
+              font-size: 0.9rem;
+              line-height: 1.8;
+              margin-bottom: 1.2rem;
+            ">
+          The true test of an engineer isn't when everything works perfectly.
+          It's when systems fail at 2 AM, customers are impacted, and every
+          minute of downtime matters.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">
+          🚨 Life in L3 Production Support
+        </h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          Working in L3 production support exposed me to some of the most
+          challenging engineering situations. From payment failures and API
+          outages to database bottlenecks and infrastructure issues, every
+          incident required quick thinking, deep analysis, and effective
+          communication.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">🔍 Root Cause Analysis Matters</h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          Fixing the issue is only half the job. Understanding why it
+          happened, documenting findings, and implementing permanent
+          preventive measures are what truly improve system reliability.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">⚡ Key Lessons Learned</h3>
+
+        <ul style="
+              color: var(--muted);
+              line-height: 1.8;
+              margin-left: 1.2rem;
+              margin-bottom: 1rem;
+            ">
+          <li>Stay calm during high-pressure situations</li>
+          <li>Data and logs tell the real story</li>
+          <li>Never assume—always validate</li>
+          <li>Document everything for future incidents</li>
+          <li>Prevention is better than repeated firefighting</li>
+          <li>Communication is as important as technical skills</li>
+        </ul>
+
+        <h3 style="margin-bottom: 0.8rem">💡 Engineering Beyond Code</h3>
+
+        <p style="color: var(--muted); line-height: 1.8">
+          Production incidents taught me that engineering is not just about
+          writing code. It's about ownership, accountability, resilience, and
+          ensuring systems remain available for the people who depend on them.
+        </p>
+
+        <div style="
+              margin-top: 1.5rem;
+              padding: 1rem;
+              border-radius: 12px;
+              background: rgba(249, 115, 22, 0.08);
+              border: 1px solid rgba(249, 115, 22, 0.15);
+            ">
+          <strong>Takeaway:</strong>
+          Great engineers aren't measured by how few problems they face, but
+          by how effectively they solve them when it matters most.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- System Design Article Modal || BLOG CARD 4 -->
+  <div class="modal-overlay" id="systemDesignArticleModal" onclick="closeSystemDesignArticle(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          ⚡ Building Systems That Scale Beyond Day One
+        </div>
+
+        <button class="modal-close" onclick="
+              document
+                .getElementById('systemDesignArticleModal')
+                .classList.remove('open')
+            ">
+          ✕
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p style="
+              color: var(--muted);
+              font-size: 0.9rem;
+              line-height: 1.8;
+              margin-bottom: 1.2rem;
+            ">
+          Scalability isn't something you add later. The best systems are
+          designed from day one with growth, reliability, and performance in
+          mind.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">
+          ⚡ Thinking Beyond Today's Requirements
+        </h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          Throughout my experience building fintech and telecom platforms, I
+          learned that systems rarely fail because of business logic. They
+          fail because they weren't designed for increasing traffic, larger
+          datasets, and changing business requirements.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">
+          🏗️ Principles of Scalable Design
+        </h3>
+
+        <ul style="
+              color: var(--muted);
+              line-height: 1.8;
+              margin-left: 1.2rem;
+              margin-bottom: 1rem;
+            ">
+          <li>Design loosely coupled microservices</li>
+          <li>Build stateless applications whenever possible</li>
+          <li>Optimize database access patterns</li>
+          <li>Implement caching strategically</li>
+          <li>Plan for observability and monitoring</li>
+          <li>Automate deployment and scaling processes</li>
+        </ul>
+
+        <h3 style="margin-bottom: 0.8rem">☁️ Cloud-Native Mindset</h3>
+
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1rem">
+          Modern cloud platforms like AWS and Azure provide powerful tools for
+          scaling applications. Services such as Kubernetes, Load Balancers,
+          Auto-Scaling, Monitoring, and Distributed Storage help systems
+          remain resilient under heavy workloads.
+        </p>
+
+        <h3 style="margin-bottom: 0.8rem">💡 Key Lessons Learned</h3>
+
+        <p style="color: var(--muted); line-height: 1.8">
+          Great architecture isn't about adding complexity. It's about making
+          smart decisions today that prevent expensive problems tomorrow.
+          Simplicity, maintainability, and scalability should always go hand
+          in hand.
+        </p>
+
+        <div style="
+              margin-top: 1.5rem;
+              padding: 1rem;
+              border-radius: 12px;
+              background: rgba(168, 85, 247, 0.08);
+              border: 1px solid rgba(168, 85, 247, 0.15);
+            ">
+          <strong>Takeaway:</strong>
+          Systems that scale successfully are rarely the most complex—they're
+          the ones designed with growth, resilience, and maintainability in
+          mind.
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav>
     <div class="nav-logo" onclick="scrollToTop()">Darshan.</div>
@@ -3156,48 +3494,60 @@
             <div class="tc-head">
               <div>
                 <div class="tc-role">Software Developer — MERN Stack</div>
-                <div class="tc-company">Aiolos Cloud Solutions</div>
-                <div class="tc-location">📍 Mumbai, MH, India</div>
+                <div class="tc-company">Vault Information Technologies</div>
+                <div class="tc-location">📍 Bengaluru, Karnataka, India</div>
               </div>
-              <span class="tc-date">Apr 2023 — Aug 2024</span>
+              <span class="tc-date">Jan 2021 — Aug 2024</span>
             </div>
             <ul class="tc-points">
               <li>
-                Architected and led development of robust Node.js APIs for
-                seamless front-end/back-end communication
+                Developed and maintained full-stack web applications using the
+                MERN stack (MongoDB, Express.js, React.js, Node.js),
+                delivering scalable and user-friendly solutions.
               </li>
               <li>
-                Integrated backend APIs into React.js frontends using Redux
-                Thunk, reducing UI inconsistencies
+                Designed and implemented RESTful APIs integrated with MongoDB
+                and MySQL, enabling efficient data processing and seamless
+                application functionality.
               </li>
               <li>
-                Implemented Next.js to unify frontend and backend into a
-                single codebase, eliminating integration friction
+                Built responsive and interactive user interfaces using
+                React.js, HTML5, and CSS3, enhancing user experience across
+                web platforms.
               </li>
               <li>
-                Engineered Amazon S3 storage solutions using the AWS SDK for
-                scalable file handling
+                Integrated AWS S3 for secure file storage and managed EC2 and
+                RDS instances for hosting and database operations.
               </li>
               <li>
-                Led code reviews in Git, contributing to architecture
-                decisions and championing scalable solutions
+                Collaborated within Agile development teams to deliver new
+                features, integrate third-party services, and maintain
+                high-quality, reusable code.
               </li>
               <li>
-                Mentored developers and drove continuous process improvement,
-                reducing recurring technical debt
+                Performed comprehensive API testing using Postman to ensure
+                application reliability and correctness.
               </li>
             </ul>
             <div class="tc-tags">
-              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">React.js</span>
-              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Next.js</span>
               <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Node.js</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Express.js</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">React.js</span>
               <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">MongoDB</span>
-              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Redux Thunk</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">MySQL</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">JavaScript</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">HTML5</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">CSS3</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">AWS S3</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">AWS EC2</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">AWS RDS</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Git</span>
+              <span class="tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.25)">Jira</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
+        <!-- <div class="timeline-item reveal">
           <div class="glow-card timeline-card">
             <div class="tc-head">
               <div>
@@ -3232,9 +3582,9 @@
               <span class="tag" style="color: #fb923c; border-color: rgba(249, 115, 22, 0.25)">MongoDB</span>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="timeline-item reveal">
+        <!-- <div class="timeline-item reveal">
           <div class="glow-card timeline-card">
             <div class="tc-head">
               <div>
@@ -3269,9 +3619,9 @@
               <span class="tag" style="color: #4ade80; border-color: rgba(34, 197, 94, 0.25)">AJAX</span>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="timeline-item reveal">
+        <!-- <div class="timeline-item reveal">
           <div class="glow-card timeline-card">
             <div class="tc-head">
               <div>
@@ -3313,7 +3663,7 @@
               <span class="tag" style="color: #4ade80; border-color: rgba(34, 197, 94, 0.25)">MongoDB</span>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -3402,7 +3752,7 @@
           <a href="https://skillsprints.in" target="_blank" class="proj-link-btn">Live Site →</a>
         </div>
 
-        <div class="spotlight-card project-card reveal reveal-delay-2" onmousemove="spotlightMove(event, this)"
+        <!-- <div class="spotlight-card project-card reveal reveal-delay-2" onmousemove="spotlightMove(event, this)"
           onmouseleave="spotlightLeave(this)">
           <div class="proj-emoji">📦</div>
           <div class="proj-header">
@@ -3433,9 +3783,9 @@
               ">
             View Details →
           </button>
-        </div>
+        </div> -->
 
-        <div class="spotlight-card project-card reveal" onmousemove="spotlightMove(event, this)"
+        <!-- <div class="spotlight-card project-card reveal" onmousemove="spotlightMove(event, this)"
           onmouseleave="spotlightLeave(this)">
           <div class="proj-emoji">🍽️</div>
           <div class="proj-header">
@@ -3464,9 +3814,9 @@
             <span class="tag" style="color: #fb923c; border-color: rgba(249, 115, 22, 0.2)">JWT</span>
           </div>
           <a href="https://github.com/cyrillopes" target="_blank" class="proj-link-btn">View on GitHub →</a>
-        </div>
+        </div> -->
 
-        <div class="spotlight-card project-card reveal reveal-delay-1" onmousemove="spotlightMove(event, this)"
+        <!-- <div class="spotlight-card project-card reveal reveal-delay-1" onmousemove="spotlightMove(event, this)"
           onmouseleave="spotlightLeave(this)">
           <div class="proj-emoji">🐾</div>
           <div class="proj-header">
@@ -3495,7 +3845,7 @@
             <span class="tag" style="color: #4ade80; border-color: rgba(34, 197, 94, 0.2)">Bootstrap 5</span>
           </div>
           <a href="https://github.com/cyrillopes" target="_blank" class="proj-link-btn">View on GitHub →</a>
-        </div>
+        </div> -->
 
         <div class="spotlight-card project-card reveal reveal-delay-2" style="
               background: linear-gradient(
@@ -3507,7 +3857,7 @@
           <div class="proj-emoji">🚀</div>
           <div class="proj-header">
             <div class="proj-title">Exploring New<br />Opportunities</div>
-            <span class="proj-badge">2025</span>
+            <span class="proj-badge">2026</span>
           </div>
           <p class="proj-desc" style="color: var(--muted)">
             Backend / Full Stack / Founding Engineer roles — Full-time or
@@ -3537,7 +3887,7 @@
   </section>
 
   <!-- ═══════ BLOG ═══════ -->
-  <section id="blog">
+  <!-- <section id="blog">
     <div class="section-wrap">
       <p class="section-label reveal">Insights</p>
       <h2 class="section-title reveal">Engineering Chronicles</h2>
@@ -3667,6 +4017,166 @@
           LinkedIn →</a>
       </div>
     </div>
+  </section> -->
+
+  <!-- ═══════ BLOG SRD═══════ -->
+  <section id="blog">
+    <div class="section-wrap">
+      <p class="section-label reveal">Insights</p>
+      <h2 class="section-title reveal">Engineering Insights</h2>
+      <p class="section-subtitle reveal">
+        Real-world lessons from backend engineering, cloud infrastructure,
+        production support, and building systems that scale.
+      </p>
+
+      <div class="blog-grid">
+        <!-- BLOG CARD 1 -->
+        <div class="glow-card blog-card reveal">
+          <div class="blog-thumb" style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(99, 102, 241, 0.15),
+                  rgba(34, 211, 238, 0.1)
+                );
+              ">
+            <div class="blog-thumb-inner" style="font-size: 3rem">🎯</div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Backend Engineering | APIs</span>
+              <span class="blog-read">5 min read</span>
+            </div>
+            <div class="blog-title">
+              Why Most APIs Fail in Production — And How to Prevent It
+            </div>
+            <p class="blog-excerpt">
+              Building APIs is easy. Building APIs that survive production
+              traffic, failures, edge cases, and millions of requests is a
+              different game. Here's what I learned while designing and
+              maintaining 100+ APIs.
+            </p>
+            <!-- <button class="proj-link-btn" style="width: 100%; justify-content: center; font-size: 0.85rem"
+              onclick="openApiArticle(event)">
+              Read Article →
+            </button> -->
+            <button class="proj-link-btn" onclick="openApiArticle(event)">
+              Read Article →
+            </button>
+          </div>
+        </div>
+
+        <!-- BLOG CARD 2 -->
+        <div class="glow-card blog-card reveal reveal-delay-1">
+          <div class="blog-thumb" style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(34, 211, 238, 0.12),
+                  rgba(52, 211, 153, 0.08)
+                );
+              ">
+            <div class="blog-thumb-inner" style="font-size: 3rem">☁️</div>
+          </div>
+
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Cloud & DevOps</span>
+              <span class="blog-read">6 min read</span>
+            </div>
+
+            <div class="blog-title">
+              From Manual Deployments to CI/CD Automation
+            </div>
+
+            <p class="blog-excerpt">
+              Learn how Azure DevOps, Kubernetes, Docker, and automated
+              pipelines transformed deployments, reduced risks, and improved
+              delivery speed across enterprise applications.
+            </p>
+            <!-- <button class="proj-link-btn" style="width: 100%; justify-content: center; font-size: 0.85rem"
+              onclick="openCloudArticle(event)">
+              Read Article →
+            </button> -->
+            <button class="proj-link-btn" onclick="openCloudArticle(event)">
+              Read Article →
+            </button>
+          </div>
+        </div>
+
+        <!-- BLOG CARD 3 -->
+        <div class="glow-card blog-card reveal">
+          <div class="blog-thumb" style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(249, 115, 22, 0.12),
+                  rgba(251, 146, 60, 0.08)
+                );
+              ">
+            <div class="blog-thumb-inner" style="font-size: 3rem">🚨</div>
+          </div>
+
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Production Support</span>
+              <span class="blog-read">7 min read</span>
+            </div>
+
+            <div class="blog-title">
+              What Critical Production Incidents Taught Me About Engineering
+            </div>
+
+            <p class="blog-excerpt">
+              A behind-the-scenes look at L3 production support, root cause
+              analysis, customer escalations, and maintaining mission-critical
+              systems used by millions of users.
+            </p>
+
+            <button class="proj-link-btn" onclick="openProductionArticle(event)">
+              Read Article →
+            </button>
+          </div>
+        </div>
+
+        <!-- BLOG CARD 4 -->
+        <div class="glow-card blog-card reveal reveal-delay-1">
+          <div class="blog-thumb" style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(168, 85, 247, 0.12),
+                  rgba(192, 132, 252, 0.08)
+                );
+              ">
+            <div class="blog-thumb-inner" style="font-size: 3rem">⚡</div>
+          </div>
+
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">System Design</span>
+              <span class="blog-read">5 min read</span>
+            </div>
+
+            <div class="blog-title">
+              Building Systems That Scale Beyond Day One
+            </div>
+
+            <p class="blog-excerpt">
+              Scalability isn't an afterthought. Explore practical lessons
+              from microservices, cloud architecture, performance
+              optimization, and designing systems built for long-term growth.
+            </p>
+
+            <button class="proj-link-btn" onclick="openSystemDesignArticle(event)">
+              Read Article →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem" class="reveal">
+        <a href="#contact" class="btn-outline">
+          More Insights Coming Soon →
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- ═══════ CONTACT ═══════ -->
@@ -3688,7 +4198,8 @@
             <div>
               <div class="ci-label">Phone</div>
               <div class="ci-val">
-                <a href="tel:+19132088744">+1 (913) 208 8744</a>
+                <a href="tel:+916364547354">+91-6364547354</a> /
+                <a href="tel:+917619211775">+91-7619211775</a>
               </div>
             </div>
           </div>
@@ -3697,7 +4208,7 @@
             <div>
               <div class="ci-label">Email</div>
               <div class="ci-val">
-                <a href="mailto:contact@cyrillopes.com">contact@cyrillopes.com</a>
+                <a href="mailto:darshansr2801@gmail.com">darshansr2801@gmail.com</a>
               </div>
             </div>
           </div>
@@ -3705,7 +4216,7 @@
             <div class="contact-item-icon">📍</div>
             <div>
               <div class="ci-label">Location</div>
-              <div class="ci-val">Kansas City, MO · Available Worldwide</div>
+              <div class="ci-val">Bengaluru, Karnataka · Available Worldwide</div>
             </div>
           </div>
           <div class="contact-item">
@@ -3718,14 +4229,13 @@
             </div>
           </div>
           <div class="socials">
-            <a href="https://github.com/cyrillopes" target="_blank" class="social-btn" title="GitHub">
+            <a href="https://github.com/iamsrd020" target="_blank" class="social-btn" title="GitHub">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/cyril-l-370131112/" target="_blank" class="social-btn"
-              title="LinkedIn">
+            <a href="https://linkedin.com/in/darshan-sr-b1021724a" target="_blank" class="social-btn" title="LinkedIn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -3733,7 +4243,7 @@
             </a>
             <a href="https://cyrillopes.github.io/Personal-Website/" target="_blank" class="social-btn"
               title="Portfolio">🌐</a>
-            <a href="mailto:contact@cyrillopes.com" class="social-btn" title="Email">✉️</a>
+            <a href="mailto:darshansr2801@gmail.com" class="social-btn" title="Email">✉️</a>
           </div>
           <div class="hire-card">
             <h4>⚡ Ready to Hire?</h4>
@@ -4151,6 +4661,54 @@
       if (e.target === document.getElementById("hireModal"))
         document.getElementById("hireModal").classList.remove("open");
     }
+
+    function openApiArticle(e) {
+      e && e.preventDefault();
+      document.getElementById("apiArticleModal").classList.add("open");
+    }
+
+    function closeApiArticle(e) {
+      if (!e || e.target === document.getElementById("apiArticleModal")) {
+        document.getElementById("apiArticleModal").classList.remove("open");
+      }
+    }
+
+    function openCloudArticle(e) {
+      e && e.preventDefault();
+      document.getElementById("cloudArticleModal").classList.add("open");
+    }
+
+    function closeCloudArticle(e) {
+      if (e.target === document.getElementById("cloudArticleModal"))
+        document.getElementById("cloudArticleModal").classList.remove("open");
+    }
+
+    function openProductionArticle(e) {
+      e && e.preventDefault();
+      document.getElementById("productionArticleModal").classList.add("open");
+    }
+
+    function closeProductionArticle(e) {
+      if (e.target === document.getElementById("productionArticleModal"))
+        document
+          .getElementById("productionArticleModal")
+          .classList.remove("open");
+    }
+
+    function openSystemDesignArticle(e) {
+      e && e.preventDefault();
+      document
+        .getElementById("systemDesignArticleModal")
+        .classList.add("open");
+    }
+
+    function closeSystemDesignArticle(e) {
+      if (e.target === document.getElementById("systemDesignArticleModal"))
+        document
+          .getElementById("systemDesignArticleModal")
+          .classList.remove("open");
+    }
+
     function submitHire() {
       const fullName = document.getElementById("hire-name").value.trim();
       const email = document.getElementById("hire-email").value.trim();
