@@ -276,7 +276,7 @@ app.get("/", (req, res) => {
 
 // ── Start ───────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n✅ Server running at http://localhost:${PORT}`);
+  console.log(`\n✅🚀 Server running at http://localhost:${PORT}`);
   console.log(`💬 Chat endpoint: POST http://localhost:${PORT}/api/chat`);
-  console.log(`❤️  Health check: GET  http://localhost:${PORT}/api/health\n`);
+  console.log(`❤️❤️‍🩹  Health check: GET  http://localhost:${PORT}/api/health\n`);
 });

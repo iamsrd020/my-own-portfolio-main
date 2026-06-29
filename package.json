@@ -1,7 +1,7 @@
 {
-  "name": "cyril-portfolio-backend",
+  "name": "darshan-portfolio-backend",
   "version": "1.0.0",
-  "description": "Express backend for Cyril Lopes portfolio AI chat agent",
+  "description": "Express backend for Darshan's portfolio AI chat agent",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
