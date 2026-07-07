@@ -1,4 +1,4 @@
-# Cyril Lopes Portfolio — AI Chat Backend
+# Darshan SR Portfolio — AI Chat Backend
 
 This is the Node.js/Express server that powers the AI chat agent on your portfolio website.
 
