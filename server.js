@@ -17,7 +17,7 @@ app.use(
       "http://localhost:8080",
       "http://127.0.0.1:3000",
       // Add your production domain here when you deploy, e.g.:
-      // 'https://cyrillopes.com'
+      "https://cyrillopes.com",
     ],
     methods: ["POST", "GET"],
     allowedHeaders: ["Content-Type"],
@@ -27,17 +27,17 @@ app.use(express.json());
 
 // ── Anthropic client ────────────────────────────────────────
 const anthropic = new Anthropic({
-  // apiKey: process.env.ANTHROPIC_API_KEY,
+  apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
 // ── Nodemailer transporter ───────────────────────────────────
 const transporter = nodemailer.createTransport({
-  // host: process.env.EMAIL_HOST || 'smtp.gmail.com',
-  // port: process.env.EMAIL_PORT || 587,
+  host: process.env.EMAIL_HOST || "smtp.gmail.com",
+  port: process.env.EMAIL_PORT || 587,
   secure: true, // true for 465, false for other ports
   auth: {
-    // user: process.env.EMAIL_USER,
-    // pass: process.env.EMAIL_PASS,
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -47,39 +47,28 @@ const SYSTEM_PROMPT = `You are an AI assistant for Darshan SR, a Backend Softwar
 PERSONAL:
 - Name: Darshan SR
 - Phone: +91-6364547354 / 7619211775
-- Email: contact@cyrillopes.com
-- Location: Kansas City, MO — available worldwide (Remote)
+- Email: darshansr2801@gmail.com
+- Location: Bengaluru, Karnataka, India — available worldwide (Remote)
 - Status: Open to backend / full-stack / founding engineer roles — Full-time or Contract
-- LinkedIn: linkedin.com/in/cyril-l-370131112
-- GitHub: github.com/cyrillopes
-- Portfolio: cyrillopes.github.io/Personal-Website
+- LinkedIn: https://www.linkedin.com/in/darshan-sr-b1021724a/
+- GitHub: https://github.com/iamsrd020
+- Portfolio: https://darshansr.vercel.app/
 
 EDUCATION:
-- M.S. Technology Management (Computer Science) — Avila University, Kansas City, MO (Jan 2025 – May 2026)
-- B.Sc. Information Technology — University of Mumbai, India (2017–2020, CGPA: 8.90/10)
+- Bachelor of Engineering (Electronics and Communication) — SJC Institute of Technology, Chickballapur, Karnataka (Aug 2019 – June 2023)(CGPA: 7.82/10)
+- Pre-University — Alva’s Pre-University College, Moodbidre - 574227, Dakshina Kannada, Karnataka (2017–2019, CGPA: 77.7%/100%)
 
-EXPERIENCE (~4 years total):
-1. Dotsoft Business Solutions, Bengaluru (Apr–Dec 2025) — Software Engineer Backend/Full-Stack
-   → AWS AppSync, Amplify, GraphQL, MySQL, CloudWatch, Lambda, S3, Node.js, React
-2. Astria Digital, Bengaluru (Aug 2024–Apr 2025) — Software Developer Backend
-   → Node.js, GraphQL APIs, MongoDB, AWS Lambda, Amazon S3, Git
-3. Aiolos Cloud Solutions, Mumbai (Apr 2023–Aug 2024) — MERN Stack Developer
+EXPERIENCE (~3 years total):
+1. Comviva Technologies, Payroll: Strawberry InfoTech, Bengaluru (Apr 2025 – Present) — Software Developer — Backend
+   → Node.js, JavaScript, Azure APIM, Azure VM, MySQL, MongoDB, Git, Postman, REST APIs, JWT auth, Microservices, Kubernetes, Docker, CI/CD, Agile/SCRUM
+2. Astria Digital, Bengaluru (Aug 2024 – March 2025) — Software Developer — Backend
+   → Node.js, GraphQL APIs, MongoDB, AWS Lambda, Amazon S3, Git, Typescript, NLP, Stella-AI, AWS CloudWatch, REST APIs, JWT auth, Microservices, Agile/SCRUM
+3. Vault Information Technologies, Bengaluru (June 2023 – Aug 2024) — MERN Stack Developer
    → React.js, Next.js, Node.js, Redux Thunk, MongoDB, Amazon S3, Express.js
-4. HUBX Commercial Ventures, Delhi (Dec 2022–Mar 2023) — MERN Stack Developer
-   → React.js, Node.js, WordPress/WooCommerce, MongoDB, Bootstrap, HTML/CSS
-5. Diacto Technologies, Pune (Feb–Aug 2022) — Associate Web Developer
-   → HTML5, CSS3, jQuery, Bootstrap, Node.js, AJAX, DOMO cloud analytics
-6. Emonics LLC (Nov 2020–Oct 2021) — Bench Sales Executive
-   → Client outreach, sales growth, relationship management
 
 FREELANCE PROJECTS:
 - Bliss by Andrea (Toronto, Jun–Nov 2024): Portfolio website — React.js, Next.js, AWS, CMS, MongoDB. URL: blissbyandrea.com
 - Skill Sprints (Mauritius, Jul–Nov 2024): Full job board platform — React.js, Node.js, MongoDB, JWT auth, role-based access, real-time tracking, AWS. URL: skillsprints.in
-- Dakri Cartons (Mauritius, Mar 2023–May 2024): Sales app — Material UI, Figma, Storybook, React.js, SCSS
-
-PERSONAL PROJECTS:
-- Pokee: Restaurant delivery app — React, Node.js, MongoDB, Paytm payment gateway, JWT auth
-- Paws for Adoption: Pet adoption platform — MERN stack, Bootstrap 5, search/filter, adoption workflows
 
 TECHNICAL SKILLS:
 - Frontend: JavaScript, React.js (90%), Next.js (85%), Redux (82%), HTML5/CSS3, Bootstrap, Material UI, Tailwind CSS
@@ -89,8 +78,8 @@ TECHNICAL SKILLS:
 - Other: Jest, SCRUM/Agile, Postman, Storybook, Figma, WordPress/WooCommerce, DOMO
 
 PERSONALITY / TONE NOTES:
-- Cyril is hardworking, collaborative, and passionate about clean code and scalable systems
-- He's mentored junior devs, led code reviews, and shipped products across 3 continents
+- Darshan is hardworking, collaborative, and passionate about clean code and scalable systems
+- He's mentored junior devs, led code reviews, and shipped products over 3 years of experience
 - He responds quickly and is easy to work with
 - Warm, direct, no-nonsense. Gets things done.
 
@@ -165,8 +154,9 @@ app.post("/api/contact", async (req, res) => {
   try {
     // Email to admin/Cyril
     const adminMailOptions = {
-      // from: `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || 'contact@cyrillopes.com',
-      // to: `"Cyril Lopes" <${process.env.EMAIL_FROM}>`,
+      from:
+        `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || "contact@cyrillopes.com",
+      to: `"Cyril Lopes" <${process.env.EMAIL_FROM}>`,
       subject: `Contact Form: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -182,7 +172,8 @@ app.post("/api/contact", async (req, res) => {
 
     // Confirmation email to user
     const userMailOptions = {
-      // from: `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || 'contact@cyrillopes.com',
+      from:
+        `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || "contact@cyrillopes.com",
       to: email,
       subject: "We Received Your Message",
       html: `
@@ -219,8 +210,9 @@ app.post("/api/hire-me", async (req, res) => {
   try {
     // Email to admin/Cyril
     const adminMailOptions = {
-      // from: `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || 'contact@cyrillopes.com',
-      // to: process.env.EMAIL_FROM,
+      from:
+        `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || "contact@cyrillopes.com",
+      to: process.env.EMAIL_FROM,
       subject: `Hire Me Request: ${projectType}`,
       html: `
         <h2>New Hire Me Form Submission</h2>
@@ -237,7 +229,8 @@ app.post("/api/hire-me", async (req, res) => {
 
     // Confirmation email to user
     const userMailOptions = {
-      // from: `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || 'contact@cyrillopes.com',
+      from:
+        `"Cyril Lopes" <${process.env.EMAIL_FROM}>` || "contact@cyrillopes.com",
       to: email,
       subject: "We Received Your Hire Me Request",
       html: `
